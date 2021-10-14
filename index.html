@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Colgate</title>
+  <script>
+      const load = () => {
+        if (!WebChat) setTimeout(load, 100);
+        if (WebChat) WebChat.default({
+          customData:{language:"en"},
+          socketUrl:"http://79.143.179.251:5005",
+          initPayload: "/greet",
+          title : 'IDFC bank',
+          subtitle : 'Your money is safe with us!',
+         
+        });
+      }
+      setTimeout(load, 200);
+  </script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <body style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/42/Main_menu_of_Wikipedia.png);"> -->
+  <script src="https://cdn.jsdelivr.net/gh/sparkdevv/webchat-cdn/index.js"  type="text/javascript"></script>
+</body>
+
+</html>
